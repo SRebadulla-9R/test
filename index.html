@@ -10,15 +10,15 @@
     <style>
     /* Base Styles */
     body { 
-        font-family: 'Verdana', 'Comic Sans MS', sans-serif; 
-        background: linear-gradient(135deg, #ff9a9e, #fad0c4); 
+        font-family: 'Baloo 2', 'Comic Sans MS', sans-serif; 
+        background: linear-gradient(135deg, #ffd1dc, #ffe7f0, #d0f0fd, #fdf6d0); 
         margin: 0; 
         display: flex; 
         flex-direction: column; 
         align-items: center; 
-        color: #111; 
+        color: #333; 
         background-size: 400% 400%; 
-        animation: gradientBG 15s ease infinite;
+        animation: gradientBG 20s ease infinite;
     }
 
     @keyframes gradientBG {
@@ -29,46 +29,46 @@
 
     /* Navigation Bar */
     nav { 
-        background: #0f0c29; 
-        background: linear-gradient(to right, #24243e, #302b63, #0f0c29); 
+        background: linear-gradient(to right, #fcd5ce, #fef1f5, #d0f0fd); 
         width: 100%; 
         padding: 15px; 
         display: flex; 
         justify-content: center; 
         gap: 15px; 
-        box-shadow: 0 4px 20px rgba(0,0,0,0.5); 
-        border-bottom: 2px solid #00fff7;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+        border-bottom: 2px solid #ffd1dc;
+        border-radius: 0 0 20px 20px;
     }
     nav button { 
-        background: #ff77ff; 
-        color: #fff; 
-        border: 2px solid #00f0ff; 
+        background: #ffd1dc; 
+        color: #ff6f91; 
+        border: 2px solid #ffb3c1; 
         padding: 12px 20px; 
         cursor: pointer; 
         border-radius: 12px; 
         font-weight: bold; 
-        text-shadow: 1px 1px #000; 
+        text-shadow: 1px 1px #ffe6ef; 
         transition: 0.3s; 
     }
     nav button:hover { 
-        background: #00f0ff; 
-        color: #ff00ff; 
+        background: #ffe7f0; 
+        color: #ff6f91; 
         transform: translateY(-3px) scale(1.05); 
-        box-shadow: 0 0 15px #fff; 
+        box-shadow: 0 0 15px #ffd1dc; 
     }
 
     /* Container Sections */
     .page-section { 
-        background: rgba(255, 255, 255, 0.85); 
+        background: rgba(255, 255, 255, 0.9); 
         padding: 40px; 
         border-radius: 25px; 
-        box-shadow: 0 15px 40px rgba(0,0,0,0.3); 
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
         width: 90%; 
         max-width: 500px; 
         margin-top: 50px; 
         text-align: center; 
         display: none; 
-        border: 2px solid #ff77ff;
+        border: 2px solid #ffd1dc;
         backdrop-filter: blur(8px);
     }
     .active { display: block; }
@@ -78,22 +78,22 @@
         text-align: left; 
         margin-bottom: 20px; 
         font-weight: bold; 
-        color: #0b0033;
-        text-shadow: 1px 1px #ff77ff;
+        color: #ff6f91;
+        text-shadow: 1px 1px #ffe6ef;
     }
     input[type="text"], input[type="password"], select { 
         width: 100%; 
         padding: 12px; 
         margin-top: 8px; 
-        border: 2px solid #ff00ff; 
+        border: 2px solid #ffb3c1; 
         border-radius: 12px; 
         box-sizing: border-box; 
-        background: #f0f0ff; 
-        color: #0a0033; 
+        background: #fff0f5; 
+        color: #ff6f91; 
         font-weight: bold; 
     }
 
-    /* Y2K Gradient Button */
+    /* Cute Pastel Gradient Button */
     .btn-submit { 
         width: 100%; 
         padding: 15px; 
@@ -103,15 +103,15 @@
         font-weight: bold; 
         cursor: pointer; 
         color: #fff; 
-        background: linear-gradient(135deg, #ff00ff, #00ffff, #ff77ff, #00ff99); 
+        background: linear-gradient(135deg, #ffd1dc, #ffe7f0, #d0f0fd, #fdf6d0); 
         background-size: 400% 400%; 
-        animation: gradientBtn 5s ease infinite; 
-        text-shadow: 1px 1px #000;
+        animation: gradientBtn 10s ease infinite; 
+        text-shadow: 1px 1px #ffe6ef;
     }
     .btn-submit:hover { 
         opacity: 0.95; 
         transform: scale(1.05); 
-        box-shadow: 0 0 20px #ff00ff, 0 0 30px #00ffff; 
+        box-shadow: 0 0 15px #ffd1dc, 0 0 20px #d0f0fd; 
     }
 
     @keyframes gradientBtn {
@@ -125,18 +125,18 @@
         text-align: left; 
         list-style: none; 
         padding: 0; 
-        font-family: 'Courier New', monospace; 
-        color: #220066;
-        text-shadow: 1px 1px #ff77ff;
+        font-family: 'Baloo 2', 'Comic Sans MS', monospace; 
+        color: #ff6f91;
+        text-shadow: 1px 1px #ffe6ef;
     }
     #player-list li { 
         padding: 10px; 
-        border-bottom: 1px solid #ff00ff; 
+        border-bottom: 1px solid #ffc1d3; 
         font-size: 15px; 
-        color: #3300ff; 
+        color: #ff8fb1; 
     }
     #player-list li:nth-child(even) { 
-        background-color: rgba(255,255,255,0.2); 
+        background-color: rgba(255, 223, 230, 0.4); 
     }
 </style>
 </head>
@@ -187,4 +187,5 @@
 </body>
 
 </html>
+
 
